@@ -13,6 +13,9 @@ public class MyInvocationHandler implements InvocationHandler {
             String str = annotation.value()[0];
             System.out.println("sql:" + str);
         }
+        if("toString".equals(method.getName())){
+            return proxy.getClass().getName();
+        }
         // TODO jdbc链接 sql提交
         return null;
     }

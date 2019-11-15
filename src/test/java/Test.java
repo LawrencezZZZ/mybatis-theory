@@ -5,6 +5,7 @@ public class Test {
     public static void main(String[] args) {
         Mysession mysession = new Mysession();
         UserMapper mapper = mysession.getMapper(UserMapper.class);
+        System.out.println(mapper);
         mapper.query();
     }
 }
