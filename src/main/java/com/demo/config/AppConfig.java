@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
     // 单个mapper注册
 //    @Bean
-//    public MyFactoryBean<UserMapper> userMapper() throws Exception {
+//    public MyFactoryBean<UserMapper> userMapper() {
 //        MyFactoryBean<UserMapper> bean = new MyFactoryBean(UserMapper.class);
 //        return bean;
 //    }
